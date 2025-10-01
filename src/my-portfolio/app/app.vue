@@ -36,9 +36,10 @@
 
         <!-- Call to Action -->
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <button class="px-8 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200 shadow-lg hover:shadow-xl">
+          <!-- Test Vuetify Button -->
+          <VBtn color="primary" size="large" class="shadow-lg">
             View My Work
-          </button>
+          </VBtn>
           <button class="px-8 py-3 border-2 border-gray-300 text-gray-700 rounded-lg font-medium hover:border-gray-400 hover:bg-gray-50 transition-colors duration-200">
             Get In Touch
           </button>
@@ -50,31 +51,37 @@
     <section class="container mx-auto px-6 py-16">
       <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
         <!-- Photography -->
-        <div class="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <div class="text-4xl mb-4">📸</div>
-          <h3 class="text-xl font-bold text-gray-900 mb-3">Photography</h3>
-          <p class="text-gray-600">
-            Capturing moments and stories through the lens, with an eye for detail and composition.
-          </p>
-        </div>
+        <VCard class="text-center hover:shadow-xl transition-shadow duration-300">
+          <VCardText>
+            <div class="text-4xl mb-4">📸</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Photography</h3>
+            <p class="text-gray-600">
+              Capturing moments and stories through the lens, with an eye for detail and composition.
+            </p>
+          </VCardText>
+        </VCard>
 
         <!-- IT Solutions -->
-        <div class="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <div class="text-4xl mb-4">💻</div>
-          <h3 class="text-xl font-bold text-gray-900 mb-3">IT Solutions</h3>
-          <p class="text-gray-600">
-            Building robust systems and solving complex technical challenges with modern technologies.
-          </p>
-        </div>
+        <VCard class="text-center hover:shadow-xl transition-shadow duration-300">
+          <VCardText>
+            <div class="text-4xl mb-4">💻</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">IT Solutions</h3>
+            <p class="text-gray-600">
+              Building robust systems and solving complex technical challenges with modern technologies.
+            </p>
+          </VCardText>
+        </VCard>
 
         <!-- AI & Prompts -->
-        <div class="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <div class="text-4xl mb-4">🤖</div>
-          <h3 class="text-xl font-bold text-gray-900 mb-3">Prompt Engineering</h3>
-          <p class="text-gray-600">
-            Crafting intelligent prompts and leveraging AI to create innovative solutions.
-          </p>
-        </div>
+        <VCard class="text-center hover:shadow-xl transition-shadow duration-300">
+          <VCardText>
+            <div class="text-4xl mb-4">🤖</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Prompt Engineering</h3>
+            <p class="text-gray-600">
+              Crafting intelligent prompts and leveraging AI to create innovative solutions.
+            </p>
+          </VCardText>
+        </VCard>
       </div>
     </section>
 
